@@ -1,0 +1,451 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3 , h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+ol, ul {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**/
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.wrap {
+    max-width: 100%;
+    margin: auto;
+}
+.mb1 { margin-bottom: 20px; }
+.mb2 { margin-bottom: 30px; }
+
+.cover-w {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    color: #fff;
+    background-color: #000;
+    padding: 20px 0;
+}
+.header .text {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.header .text b {
+    color: #e43b2c;
+    font-weight: 700;
+}
+
+.bg-full {
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(img/bg.jpg);
+}
+/*
+.video:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba( 0, 0, 0, 0.75 );
+}
+.video .wrap {
+    z-index: 2;
+    position: relative;
+    width: 900px;
+    padding: 60px 0;
+} */
+.video .wrap {
+    width: 900px;
+    padding: 40px 0;
+}
+.video .title {
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.video .title b {
+    color: #e43b2c;
+
+}
+.video .title i {
+    text-decoration: underline;
+}
+
+
+.bt {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background-color: #30a05c;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 1px solid rgba( 0, 0, 0, 0.2 );
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.2 );
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.2 );
+    -moz-box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.2 );
+    box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.2 );
+}
+.bt:hover {
+    -webkit-box-shadow: inset 0 2px 2px 0 rgba( 255, 255, 255, 0.22 ), 0 233px 233px 0 rgba( 255, 255, 255, 0.12 ) inset;
+    -moz-box-shadow: inset 0 2px 2px 0 rgba( 255, 255, 255, 0.22 ), 0 233px 233px 0 rgba( 255, 255, 255, 0.12 ) inset;
+    box-shadow: inset 0 2px 2px 0 rgba( 255, 255, 255, 0.22 ), 0 233px 233px 0 rgba( 255, 255, 255, 0.12 ) inset;
+}
+.bt .svg {
+    width: 26px;
+    display: inline-block;
+}
+.bt b {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 1em;
+}
+.bt small {
+    display: block;
+    font-size: 17px;
+    opacity: 0.7;
+}
+
+.cards {
+    opacity: 0.5;
+}
+
+.comments {}
+.comments .wrap {
+    width: 820px;
+    padding: 40px 0;
+}
+.comments .box {
+    font-size: 14px;
+    padding: 40px 25px;
+    background-color: #f0f5f7;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.comments .title {
+    font-size: 22px;
+    line-height: 1.25em;
+    color: rgba( 0, 0, 0, 0.69 );
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.comments .entry {
+    padding: 0 15px;
+    border: 1px solid #e9ebee;
+    text-align: left;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.comments .entry .counter {
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ebee;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.comments .item { }
+.comments .item .list {
+    margin-left: 60px;
+}
+
+.comments .content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px 0;
+    color: #4267b2;
+}
+.comments .content .photo {
+    width: 60px;
+    padding-right: 10px;
+}
+.comments .content .photo .img {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: block;
+
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.comments .content .text {
+    width: calc( 100% - 55px );
+}
+.comments .content .text .name {
+    color: #365899;
+    font-weight: 700;
+    font-size: 0.85em;
+}
+.comments .content .link {
+    cursor: pointer;
+}
+.comments .content .link:hover {
+    text-decoration: underline;
+}
+.comments .content .comment {
+    position: relative;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #000;
+
+    background-color: #eaebef;
+    padding: 10px 20px;
+
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    border-radius: 21px;
+}
+.comments .content .likes {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+
+    color: #4267b2;
+    font-size: 13px;
+    font-weight: 300;
+    background: url(img/comment.png) no-repeat center left;
+    padding: 2px 6px 2px 44px;
+
+    background-color: #fff;
+    border: 1px solid #eaebef;
+
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+}
+.comments .content .meta {
+    font-size: 0.75em;
+}
+.comments .content .meta .link {
+    color: #4267b2;
+}
+.comments .content .meta .date {
+    color: #90949c;
+}
+
+.cta .wrap {
+    width: 900px;
+}
+.cta .cards,
+.cta .countdown {
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+.countdown .piece {
+    width: 87px;
+    padding: 0 10px;
+}
+.countdown .num {
+    display: block;
+    font-size: 27px;
+    font-weight: 600;
+    width: 67px;
+    height: 67px;
+    line-height: 42px;
+    border: 4px solid #000;
+    padding: 10px;
+
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.countdown .text {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba( 0, 0, 0, 0.4 );
+    font-weight: 400;
+}
+
+.offer {
+    padding: 80px 0;
+    color: #fff;
+    background-color: #000;
+}
+.offer .wrap {
+    width: 800px;
+}
+.offer .entry .title {
+    font-size: 50px;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.offer .entry .subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.offer .product {
+    max-width: 300px;
+}
+.offer .box {
+    padding: 30px 40px;
+    background-color: rgb( 19, 19, 19 );
+    text-align: left;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.offer .list {}
+.offer .list .item {
+    position: relative;
+    padding-left: 37px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+.offer .list .item .svg {
+    width: 28px;
+    height: 22px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.bt-red {
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+    font-size: 26px;
+    line-height: 1em;
+    text-transform: capitalize;
+    background-color: #ff3830;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.offer .cta {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.25em;
+}
+.offer .cta b {
+    display: block;
+}
+.offer .price {
+    color: #ff3830;
+    font-size: 19px;
+    text-align: center;
+}
+.offer .warranty {
+    text-align: center;
+}
+.offer .warranty .title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.offer .warranty .subtitle {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.offer .countdown .num {
+    color: #fff;
+    border-color: #fff;
+}
+.offer .countdown .text {
+    color: rgba( 255, 255, 255, 0.3 );
+}
+
+.footer {
+    padding: 40px 0 60px 0;
+    color: rgba( 255, 255, 255, 0.54 );
+    background-color: #000;
+}
+.footer .wrap {
+    width: 1024px;
+}
+.footer a {
+    /* color: #00e; */
+    color: #ccc;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.cta-wrap {
+    display: none;
+}
+
+@media only screen and ( max-width: 480px ) {
+
+    .bt .svg {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0
+    }
+
+}
