@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+<META NAME="robots" CONTENT="noindex,nofollow">
 
 <head>
 
